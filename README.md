@@ -1,7 +1,8 @@
-# Menu Game Framework
+# NoMapNeeded
 
-A lightweight, modular framework for building **menu-driven games** like life simulations, business simulations, or interactive story games – fully controlled via buttons, tabs, and text panels.  
-Written in **Zig** as a learning project, focusing on clarity, flexibility, and performance.
+**NoMapNeeded** is a modular and lightweight framework for creating **menu-driven simulation games** – games without classic map navigation, fully controlled via menus, buttons, and tabs.
+
+The framework is written in **Zig** and built around a flexible, extendable core module called **SimShell**.
 
 ---
 
@@ -65,6 +66,17 @@ Written in **Zig** as a learning project, focusing on clarity, flexibility, and 
 - Animations & UI feedback
 - Plug-in system (enable modding)
 - Scripting support (e.g. custom mini-event language)
+
+---
+
+## 🧩 Structure Overview
+
+NoMapNeeded/ 
+├── README.md # Project documentation 
+├── src/ 
+│ └── simshell.zig # Core module (SimShell) 
+├── examples/ # Example games & demos 
+└── LICENSE # License file
 
 ---
 
