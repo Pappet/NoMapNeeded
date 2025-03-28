@@ -1,76 +1,76 @@
-# NoMapNeeded – MVP-Planung
+# NoMapNeeded – MVP Planning
 
-Dies ist die Meilenstein- und Feature-Planung für das NoMapNeeded-Framework.  
-Ziel ist es, Schritt für Schritt ein solides Grundgerüst für menügesteuerte Simulationsspiele zu bauen – ohne klassische Map, aber mit Menü, Tabs, Stats und Events.
+This is the milestone and feature planning for the NoMapNeeded framework.  
+The goal is to build a solid foundation for menu-driven simulation games – without a classic map, but with menus, tabs, stats, and events.
 
 ---
 
 ## Phase 1 – Core & UI Basics (Minimal Viable Product)
 
-**Ziel:** Ein lauffähiges Grundgerüst, das Eingaben verarbeitet, Menüs anzeigt und erste Stats verwaltet.
+**Goal:** A functional framework that handles input, displays menus, and manages basic stats.
 
-### Aufgaben
+### Tasks
 
-### 🟢 Grundsystem
-- [ ] Projektstruktur & Buildsystem (Zig, `zig build`)
-- [ ] sokol-gfx Renderer integrieren & Fenster öffnen
-- [ ] Input-Handling: Mausklicks & Tastatureingaben
-- [ ] SimShell Core: Event-Loop & Update/Render-Logik
+### 🟢 Core System
+- [ ] Project structure & build system (Zig, `zig build`)
+- [ ] Integrate sokol-gfx renderer & open window
+- [ ] Input handling: mouse clicks & keyboard input
+- [ ] SimShell Core: event loop & update/render logic
 
-### 🟢 UI-Komponenten
-- [ ] Button mit Text & Click-Event
-- [ ] Label (statischer Text)
-- [ ] Panel als Container
-- [ ] Einfaches Layout-System (Grid, Row, Column)
+### 🟢 UI Components
+- [ ] Button with text & click event
+- [ ] Label (static text)
+- [ ] Panel as container
+- [ ] Simple layout system (grid, row, column)
 
-### 🟢 Gameplay-Logik
-- [ ] Stat-System (z. B. Müdigkeit, Geld, Zeit)
-- [ ] API zur Anzeige & Modifikation von Stats
-- [ ] Zeitsystem (Stunden, Tage)
-- [ ] Aktionen verbrauchen Zeit (z. B. Button-Klick = +1 Stunde)
-
----
-
-## Phase 2 – Gameplay-Mechaniken & Struktur
-
-**Ziel:** Erste kleine Simulationsspiele mit NoMapNeeded möglich machen.
-
-### Aufgaben
-
-### 🔵 Gameplay-Features
-- [ ] Event-System: Verknüpfe Aktionen mit Stat-Änderungen
-- [ ] Mehrstufige Events (z. B. zufällige Begegnungen, Entscheidungsevents)
-- [ ] Tab-System: Wechsel zwischen Ansichten (z. B. Status, Aktionen, Inventar)
-- [ ] Save-/Load-System (einfache JSON oder Zig-Serialisierung)
-
-### 🔵 Komfort-Features
-- [ ] Scrollbare Panels & Listen
-- [ ] Fokus-Navigation (Tastatur: Tab, Pfeiltasten)
-- [ ] Basis-Theming für UI (Farben, Padding, Fonts)
+### 🟢 Gameplay Logic
+- [ ] Stat system (e.g., fatigue, money, time)
+- [ ] API to display & modify stats
+- [ ] Time system (hours, days)
+- [ ] Actions consume time (e.g., button click = +1 hour)
 
 ---
 
-## Phase 3 – Erweiterungen & Nice-to-Have
+## Phase 2 – Gameplay Mechanics & Structure
 
-**Ziel:** NoMapNeeded wird flexibler, schöner und besser integrierbar.
+**Goal:** Make it possible to create small simulation games with NoMapNeeded.
 
-### Aufgaben
+### Tasks
+
+### 🔵 Gameplay Features
+- [ ] Event system: link actions to stat changes
+- [ ] Multi-stage events (e.g., random encounters, decision events)
+- [ ] Tab system: switch between views (e.g., status, actions, inventory)
+- [ ] Save/load system (simple JSON or Zig serialization)
+
+### 🔵 Comfort Features
+- [ ] Scrollable panels & lists
+- [ ] Focus navigation (keyboard: tab, arrow keys)
+- [ ] Basic theming for UI (colors, padding, fonts)
+
+---
+
+## Phase 3 – Extensions & Nice-to-Have
+
+**Goal:** Make NoMapNeeded more flexible, polished, and integrable.
+
+### Tasks
 
 ### 🟣 Advanced Features
-- [ ] Event-Log-Komponente (Text-Log, was im Spiel passiert ist)
-- [ ] Integrierte Debug-/Befehlskonsole
-- [ ] Input-Parser für Textbefehle
-- [ ] Hook-/Plugin-System für Erweiterungen
+- [ ] Event log component (text log of what happened in the game)
+- [ ] Integrated debug/command console
+- [ ] Input parser for text commands
+- [ ] Hook/plugin system for extensions
 
-### 🟣 Entwickler-Tools
-- [ ] Beispielspiel (Mini-Lebenssimulation)
-- [ ] Dokumentation der API
-- [ ] Beispiele & Templates im `examples/`-Ordner
+### 🟣 Developer Tools
+- [ ] Example game (mini life simulation)
+- [ ] API documentation
+- [ ] Examples & templates in the `examples/` folder
 
 ---
 
-## Bonus-Ideen (optional, Zukunft)
+## Bonus Ideas (optional, future)
 
-- Mouse-Over Tooltips
-- Dynamische UI-Layouts
-- Event-Editor als externes Tool
+- Mouse-over tooltips
+- Dynamic UI layouts
+- Event editor as external tool
