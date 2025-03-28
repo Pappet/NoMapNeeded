@@ -69,17 +69,6 @@ The framework is written in **Zig** and built around a flexible, extendable core
 
 ---
 
-## 🧩 Structure Overview
-
-NoMapNeeded/ 
-├── README.md # Project documentation 
-├── src/ 
-│ └── simshell.zig # Core module (SimShell) 
-├── examples/ # Example games & demos 
-└── LICENSE # License file
-
----
-
 ## 🧩 Use Case Examples
 
 - Life simulations
