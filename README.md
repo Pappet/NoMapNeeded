@@ -19,10 +19,11 @@ The framework is written in Zig and is built around a core module called `SimShe
 
 All core documentation is maintained in the `/docs` folder:
 
-- [Project Roadmap](docs/Project_Roadmap.md): Development phases, milestones, and detailed implementation goals.
-- [MVP Compliance Checklist](docs/MVP_Compliance_Checklist.md): Rules and criteria for what the MVP must fulfill.
-- [Developer Commitment & Guidelines](docs/Developer_Commitment.md): Principles to ensure modular, understandable, and testable development.
-- [Test Template & Strategy](docs/Tests_Template.md): Patterns and conventions for writing unit and integration tests.
+- [Project Roadmap](docs/PROJECT_ROADMAP.md): Development phases, milestones, and detailed implementation goals.
+- [MVP Compliance Checklist](docs/MVP_COMPLIANCE_CHECKLIST.md): Rules and criteria for what the MVP must fulfill.
+- [Developer Commitment & Guidelines](docs/DEVELOPER_COMMITMENT.md): Principles to ensure modular, understandable, and testable development.
+- [Test Template & Strategy](docs/TESTS_TEMPLATE.md): Patterns and conventions for writing unit and integration tests.
+- [Commit Guidlines](docs/COMMIT_GUIDELINES.md): Formats and Best Practices for writing commits in this project.
 
 ---
 
@@ -68,7 +69,7 @@ NoMapNeeded is designed around the following principles:
 
 ## 👥 Contributing
 
-Contributions, feedback, and learning input are welcome — especially from other Zig learners! Please make sure to follow the principles outlined in the [Developer Commitment](docs/Developer_Commitment.md).
+Contributions, feedback, and learning input are welcome — especially from other Zig learners! Please make sure to follow the principles outlined in the [Developer Commitment](docs/DEVELOPER_COMMITMENT.md).
 
 ---
 

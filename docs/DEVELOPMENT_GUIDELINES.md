@@ -1,6 +1,6 @@
 # NoMapNeeded – Development Guidelines
 
-This document defines high-level development practices and principles for working on the NoMapNeeded framework. It complements the [Developer Commitment](./Developer_Commitment.md), [Commit Guidelines](./Commit_Guidelines.md), and [MVP Compliance Checklist](./MVP_Compliance_Checklist.md).
+This document defines high-level development practices and principles for working on the NoMapNeeded framework. It complements the [Developer Commitment](./DEVELOPER_COMMITMENT.md), [Commit Guidelines](./COMMIT_GUIDELINES.md), [MVP Compliance Checklist](./MVP_COMPLIANCE_CHECKLIST.md) and [Tests Template](./TESTS_TEMPLATE.md).
 
 ---
 
@@ -32,7 +32,7 @@ Each module should have:
 
 ## 🧪 Testing
 
-See [Tests Template & Strategy](./Tests_Template.md) for details.
+See [Tests Template & Strategy](./TESTS_TEMPLATE.md) for details.
 
 Summary:
 - Each module must have at least one **unit test**
@@ -52,19 +52,18 @@ Summary:
 ## ✅ Commit Messages
 
 Commit message rules have been moved to their own document:
-➡️ See [Commit Guidelines](./Commit_Guidelines.md)
+➡️ See [Commit Guidelines](./COMMIT_GUIDELINES.md)
 
 ---
 
 ## 🧭 Development Flow
 
-1. Plan feature or module using [Project Roadmap](./Project_Roadmap.md)
-2. Ensure feature fits into [MVP Compliance Checklist](./MVP_Compliance_Checklist.md) or a later phase
+1. Plan feature or module using [Project Roadmap](./PROJECT_ROADMAP.md)
+2. Ensure feature fits into [MVP Compliance Checklist](./MVP_COMPLIANCE_CHECKLIST.md) or a later phase
 3. Implement with tests and documentation
-4. Commit using proper tags ([Commit Guidelines](./Commit_Guidelines.md))
+4. Commit using proper tags ([Commit Guidelines](./COMMIT_GUIDELINES.md))
 5. Reflect on process in Lessons Learned if feature is substantial
 
 ---
 
 For all contributors: remember this is a learning-first project. Clear code, documented thought processes, and simplicity are more important than advanced tricks or full coverage. Build to understand — and enjoy it!
-

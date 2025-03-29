@@ -52,7 +52,7 @@ Each commit message must follow this format:
 
 ## ℹ️ More Information
 
-For general development rules and project structure, refer to the [Developer Commitment & Guidelines](docs/Developer_Commitment.md).
+For general development rules and project structure, refer to the [Developer Commitment & Guidelines](docs/DEVELOPER_COMMITMENT.md).
 
 ---
 
