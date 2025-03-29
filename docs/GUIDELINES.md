@@ -101,7 +101,7 @@ These guidelines ensure the project's modularity, maintainability, scalability, 
 
 ## 🗃️ Folder Structure Recommendation
 
-Maintain a consistent and clear directory structure:
+- Maintain a consistent and clear directory structure:
 ```plaintext
     NoMapNeeded/
     ├── src/
