@@ -1,118 +1,83 @@
 # NoMapNeeded
 
-**NoMapNeeded** is a modular and lightweight framework for creating **menu-driven simulation games** – games without classic map navigation, fully controlled via menus, buttons, and tabs.
+**NoMapNeeded** is a modular and lightweight framework for building menu-driven simulation games — games without traditional world maps, controlled entirely through menus, buttons, and tabs.
 
-The framework is written in **Zig** and built around a flexible, extendable core module called **SimShell**.
+The framework is written in Zig and is built around a core module called `SimShell`, which provides UI lifecycle management, input handling, and the foundation for all other modules.
 
 ---
 
 ## 🎯 Project Goals
 
-- Provide essential UI components for menu-based games
-- Be easily extendable and highly modular
-- Keep dependencies minimal
-- Serve as a learning project for Zig and game architecture
+- Provide essential UI components tailored for stat-based and turn-based simulation games.
+- Encourage clean modularity and minimal coupling.
+- Be easy to extend and maintain, even for beginner developers.
+- Serve as a personal learning project for the Zig programming language and game framework design.
 
 ---
 
-## 🚀 Roadmap & Milestones
+## 📚 Project Documentation
 
-### Phase 1 – Core & UI Basics
-**Goal:** A clickable menu with visible information
+All core documentation is maintained in the `/docs` folder:
 
-- Project structure setup
-- Integrate `sokol-gfx` renderer & open window
-- Capture mouse clicks and keyboard input
-
-**UI Components:**
-- Button with text & click event
-- Label for text display
-- Panel as container
-- Simple layout system (Grid / Row / Column)
-
-**Gameplay Logic:**
-- Stat system (e.g. fatigue, money, time)
-- API to modify & display stats
-- Time system (hours, days)
-- Actions consume time
+- [Project Roadmap](docs/Project_Roadmap.md): Development phases, milestones, and detailed implementation goals.
+- [MVP Compliance Checklist](docs/MVP_Compliance_Checklist.md): Rules and criteria for what the MVP must fulfill.
+- [Developer Commitment & Guidelines](docs/Developer_Commitment.md): Principles to ensure modular, understandable, and testable development.
+- [Test Template & Strategy](docs/Tests_Template.md): Patterns and conventions for writing unit and integration tests.
 
 ---
 
-### Phase 2 – Gameplay & Quality of Life Features
-**Goal:** A first playable simulation
+## 🚀 Getting Started
 
-- Event system: Connect actions to stat changes
-- Multi-stage events (e.g. random encounters)
-- Tab system: Switch between views (status, actions, inventory)
-- Save/Load system
+> ⚠️ **Note:** The project is currently in the early conceptual and documentation phase. There is no working code yet — development will start after the MVP structure and technical decisions finalized.
 
----
+### 1. Clone the Repository
 
-### Phase 3 – Extensions & Nice-to-Have Features
-**Goal:** Prepare the framework for complex games
+```bash
+git clone https://github.com/Pappet/NoMapNeeded.git
+cd NoMapNeeded
+```
 
-- Chat / Event log: Display what happens
-- Text input field: For name input, etc.
-- Debug console: Execute ingame commands
-- Scrollable lists & tables: Inventory, stats
-- Inventory system: Items, slots, item logic
+### 2. Build the Framework
 
----
+Make sure you have [Zig](https://ziglang.org/download/) installed, then:
 
-### Phase 4 – Deluxe (Optional, Long-Term)
-**Goal:** Extras for polish & modding support
+```bash
+zig build
+```
 
-- UI skinning / themes
-- Animations & UI feedback
-- Plug-in system (enable modding)
-- Scripting support (e.g. custom mini-event language)
+### 3. Run Tests
+
+```bash
+zig test src/main.zig
+```
+
+(Or run individual test files inside `/src/tests/`)
 
 ---
 
-## 🌳 Project-Structure
+## 💡 Design Philosophy
 
-NoMapNeeded/
+NoMapNeeded is designed around the following principles:
 
-├── README.md 
-
-├── src/ 
-
-│   └── simshell.zig 
-
-├── examples/ 
-
-└── LICENSE 
+- **Modularity First**: Each module has one responsibility and interacts via clean interfaces.
+- **Separation of Concerns**: UI elements trigger events — game logic handles consequences.
+- **Learning-Driven Development**: Simplicity, readability, and documentation are favored over cleverness.
+- **Retained-Mode UI**: UI components persist and are only updated on demand.
 
 ---
 
-## 🧩 Use Case Examples
+## 👥 Contributing
 
-- Life simulations
-- Business / Economy games
-- Interactive fiction
-- Management games without map navigation
+Contributions, feedback, and learning input are welcome — especially from other Zig learners! Please make sure to follow the principles outlined in the [Developer Commitment](docs/Developer_Commitment.md).
 
 ---
 
-## ⚙️ Tech Stack
+## ⚠️ Disclaimer
 
-- **Language:** [Zig](https://ziglang.org/)
-- **Rendering:** [sokol-gfx](https://github.com/floooh/sokol) (minimal cross-platform graphics)
-- **Platform:** Cross-platform (Windows, Linux, Mac)
+This framework is being developed as a personal learning project with the active assistance of OpenAI's ChatGPT for guidance and architectural decisions.
 
----
-
-## 📝 Development Guidelines
-
-- **Code comments:** Always in **English**
-- **Structure:** Clear, minimal, and well-documented
-- **Focus:** Simplicity first, performance second
+The project is intentionally simple and handcrafted to foster understanding — production use is possible but not the primary goal.
 
 ---
 
-## 🤝 Contribution
-
-This project is a learning-focused hobby project.  
-Suggestions, feedback & PRs are welcome after MVP completion.
-
----
+Happy Simulating ✨
