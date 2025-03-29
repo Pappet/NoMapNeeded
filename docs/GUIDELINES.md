@@ -122,7 +122,10 @@ These guidelines ensure the project's modularity, maintainability, scalability, 
     ├── docs/
     │   ├── GUIDELINES.md
     │   └── ...
+    ├── examples/
+    │   └── ...
     ├── README.md
+    ├── LICENSE
     └── build.zig
 ```
 ---
