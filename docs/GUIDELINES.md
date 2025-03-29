@@ -59,12 +59,12 @@ These guidelines ensure the project's modularity, maintainability, scalability, 
   - All code comments are in clear, concise English.
   - Document not just "how," but also "why" specific implementation choices are made.
 
-  Example:
-  ```zig
-  // Initializes the SimShell module.
-  // Sets up main application window and input handlers.
-  fn SimShell_Init() void {}
-  ```
+    Example:
+    ```zig
+    // Initializes the SimShell module.
+    // Sets up main application window and input handlers.
+    fn SimShell_Init() void {}
+    ```
   
 - **Documentation Files**
   - All documentation and guidelines (like this one) should be written in GitHub-flavored Markdown (`.md`).
@@ -102,7 +102,7 @@ These guidelines ensure the project's modularity, maintainability, scalability, 
 ## 🗃️ Folder Structure Recommendation
 
 Maintain a consistent and clear directory structure:
-    ```css
+```plaintext
     NoMapNeeded/
     ├── src/
     │   ├── simshell/
@@ -124,7 +124,7 @@ Maintain a consistent and clear directory structure:
     │   └── ...
     ├── README.md
     └── build.zig
-    ```
+```
 ---
 
 ## ⚙️ Committing & Collaboration (Optional, Recommended)
