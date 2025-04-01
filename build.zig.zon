@@ -65,6 +65,10 @@
         //    // actually used.
         //    .lazy = false,
         //},
+        .sokol = .{
+            .url = "git+https://github.com/floooh/sokol-zig.git#0d2494b83438dd2372a55dda1039cba0fab1b941",
+            .hash = "sokol-0.1.0-pb1HK224LACH3aZK6agvOkqywOKX14JqUsQySbi6F_Nu",
+        },
     },
 
     // Specifies the set of files and directories that are included in this package.
