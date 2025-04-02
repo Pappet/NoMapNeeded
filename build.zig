@@ -11,15 +11,20 @@ pub fn build(b: *Build) !void {
         .optimize = optimize,
     });
 
-    const NoMapNeeded = b.addExecutable(.{
+    const exe = b.addExecutable(.{
         .name = "NoMapNeeded",
         .target = target,
         .optimize = optimize,
-        .root_source_file = b.path("src/core/SimShell.zig"),
+        .root_source_file = b.path("src/main.zig"),
     });
+    exe.root_module.addImport("sokol", dep_sokol.module("sokol"));
 
-    NoMapNeeded.root_module.addImport("sokol", dep_sokol.module("sokol"));
-    b.installArtifact(NoMapNeeded);
-    const run = b.addRunArtifact(NoMapNeeded);
-    b.step("run", "Run NoMapNeeded").dependOn(&run.step);
+    b.installArtifact(exe);
+    const run_cmd = b.addRunArtifact(exe);
+    run_cmd.step.dependOn(b.getInstallStep());
+    if (b.args) |args| {
+        run_cmd.addArgs(args);
+    }
+    const run_step = b.step("run", "Run the application");
+    run_step.dependOn(&run_cmd.step);
 }
